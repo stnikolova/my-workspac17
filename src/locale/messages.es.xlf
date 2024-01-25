@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5284324147037934285" datatype="html">
+        <source>Move Up</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Move Up button</note>
+        <note priority="1" from="meaning">kendo.test.moveUp</note>
+      </trans-unit>
+      <trans-unit id="8557817572761218529" datatype="html">
+        <source>Move Down</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Move Down button</note>
+        <note priority="1" from="meaning">kendo.test.moveDown</note>
+      </trans-unit>
+      <trans-unit id="8543673543393941084" datatype="html">
+        <source>Transfer To</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Transfer To button</note>
+        <note priority="1" from="meaning">kendo.test.transferTo</note>
+      </trans-unit>
+      <trans-unit id="3616132985238632953" datatype="html">
+        <source>Transfer All To</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Transfer All To button</note>
+        <note priority="1" from="meaning">kendo.test.transferAllTo</note>
+      </trans-unit>
+      <trans-unit id="5026451873918142047" datatype="html">
+        <source>Transfer From</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Transfer From button</note>
+        <note priority="1" from="meaning">kendo.test.transferFrom</note>
+      </trans-unit>
+      <trans-unit id="8596577409715335066" datatype="html">
+        <source>Transfer All From</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">43,46</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Transfer All From button</note>
+        <note priority="1" from="meaning">kendo.test.transferAllFrom</note>
+      </trans-unit>
+      <trans-unit id="4756056324692428184" datatype="html">
+        <source>Remove</source>
+        <target>ES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/my-lib-17/src/lib/listbox/translation.component.ts</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+        <note priority="1" from="description">The title of the Remove button</note>
+        <note priority="1" from="meaning">kendo.test.remove</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

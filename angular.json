@@ -3,5 +3,138 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "my-lib-17": {
+      "projectType": "library",
+      "root": "projects/my-lib-17",
+      "sourceRoot": "projects/my-lib-17/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/my-lib-17/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/my-lib-17/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/my-lib-17/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/my-lib-17/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "my-lib-17-example": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/my-lib-17-example",
+      "sourceRoot": "projects/my-lib-17-example/src",
+      "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es": "src/locale/messages.es.xlf"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/my-lib-17-example",
+            "index": "projects/my-lib-17-example/src/index.html",
+            "browser": "projects/my-lib-17-example/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/my-lib-17-example/tsconfig.app.json",
+            "assets": [
+              "projects/my-lib-17-example/src/favicon.ico",
+              "projects/my-lib-17-example/src/assets"
+            ],
+            "styles": [
+              "projects/my-lib-17-example/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "es": {
+              "localize": ["es"]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "my-lib-17-example:build:production"
+            },
+            "development": {
+              "buildTarget": "my-lib-17-example:build:development"
+            },
+            "es": {
+              "buildTarget": "my-lib-17-example:build:es"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "my-lib-17-example:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/my-lib-17-example/tsconfig.spec.json",
+            "assets": [
+              "projects/my-lib-17-example/src/favicon.ico",
+              "projects/my-lib-17-example/src/assets"
+            ],
+            "styles": [
+              "projects/my-lib-17-example/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
   }
 }
